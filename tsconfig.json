@@ -3,5 +3,14 @@
   "extends": "@tsconfig/docusaurus/tsconfig.json",
   "compilerOptions": {
     "baseUrl": "."
+  },
+  // 指定模块的路径，和 baseUrl 有关联，和 webpack 中 resolve.alias 配置一样（webpack 中已配置）
+  "paths": {
+    // 模块导入别名，指定后 vscode 可在文件中识别 import * from 'src/*';
+    // 需要在 docusaurus.config.js 中添加 Webpack 别名配置 resolve.alias
+    "src/*": [
+      "./src/*"
+    ],
+    "@site/*": ["./*"]
   }
 }

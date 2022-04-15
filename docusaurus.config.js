@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const path = require('path');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -114,6 +115,30 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    plugins: [
+      // async function pluginAlias(context, options) {
+      //   return {
+      //     name: 'zain-alias-plugin',
+      //     configureWebpack() {
+      //         return {
+      //             resolve: {
+      //                 alias: {
+      //                   // 模块导入别名，指定后可以在文件之直接 import * from 'src/*';
+      //                   // 在 tsconfig.json 中添加 "paths": {"src/*": ["./src/*"]}
+      //                   src: path.resolve(__dirname, './src/'),
+      //                 },
+      //             },
+      //         };
+      //     },
+      //   };
+      // },
+      // 插件可以直接像上面一样直接写在当前文件, 也可以独立文件编写
+      ['./plugin/alias.js', {
+        alias: {
+          src: path.resolve(__dirname, './src/'),
+        }
+      }],
+    ]
 };
 
 module.exports = config;
