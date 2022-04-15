@@ -7,7 +7,7 @@ const path = require('path');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Zaindoc',
   tagline: 'Dinosaurs are cool',
   url: 'https://zainchen.github.io',
   baseUrl: '/zaindoc/',
@@ -45,10 +45,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Zaindoc',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Zain Logo',
+          src: 'img/logo.jpeg',
         },
         items: [
           {
