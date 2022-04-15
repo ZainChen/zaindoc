@@ -1,43 +1,27 @@
-# Website
+# Zaindoc
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## 开发/构建/部署
 
-### Installation
+```bash
+# 安装依赖
+npm i
 
-```
-$ yarn
-```
+# 开发
+npm run start
 
-### Local Development
+# 构建
+npm run build
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
+# 部署
+# 设置好 github ssh, 可直接用这条命令, 自动构建并 push 到 github 的 gh-pages 分支中触发页面更新
 USE_SSH=true npm run deploy
-
-$ USE_SSH=true yarn deploy
 ```
 
-Not using SSH:
+### 自动部署配置
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## 参考资料
+
+- 官方文档(多语言): https://docusaurus.io
+- 触发 GitHub Actions 自动部署: https://docusaurus.io/zh-CN/docs/deployment#triggering-deployment-with-github-actions
