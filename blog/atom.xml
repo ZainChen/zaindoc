@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zainchen.github.io/zaindoc/blog</id>
-    <title>My Site Blog</title>
+    <title>Zaindoc Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zainchen.github.io/zaindoc/blog"/>
-    <subtitle>My Site Blog</subtitle>
+    <subtitle>Zaindoc Blog</subtitle>
     <icon>https://zainchen.github.io/zaindoc/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
