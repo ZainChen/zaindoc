@@ -18,6 +18,11 @@ const config = {
   projectName: 'zaindoc', // Usually your repo name.
   trailingSlash: false,
 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh-CN'],
+  },
+
   presets: [
     [
       'classic',
@@ -79,6 +84,10 @@ const config = {
             label: 'DocSidebar',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/ZainChen/zaindoc',
             label: 'GitHub',
