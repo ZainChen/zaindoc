@@ -26,13 +26,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/ZainChen/zaindoc/tree/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/ZainChen/zaindoc/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -69,13 +68,19 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'doc/intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Doc',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'docSidebar',
+            label: 'DocSidebar',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ZainChen/zaindoc',
             label: 'GitHub',
             position: 'right',
           },
@@ -89,7 +94,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/doc/intro',
               },
             ],
           },
