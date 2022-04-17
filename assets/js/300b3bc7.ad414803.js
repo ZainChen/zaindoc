@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkzaindoc=self.webpackChunkzaindoc||[]).push([[8831],{5977:function(a){a.exports=JSON.parse('{"allTagsPath":"/zaindoc/blog/tags","name":"facebook","count":1,"permalink":"/zaindoc/blog/tags/facebook"}')}}]);
