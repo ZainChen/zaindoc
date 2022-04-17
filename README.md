@@ -108,8 +108,8 @@ npm run start -- --locale zh-CN
 将您的文档 Markdown 文件从 复制docs/到i18n/fr/docusaurus-plugin-content-docs/current，并翻译它们：
 
 ```bash
-mkdir -p i18n/zh-cn/docusaurus-plugin-content-blog
-cp -r blog/** i18n/zh-cn/docusaurus-plugin-content-blog
+mkdir -p i18n/zh-CN/docusaurus-plugin-content-blog
+cp -r blog/** i18n/zh-CN/docusaurus-plugin-content-blog
 ```
 
 ### 构建站点
@@ -126,6 +126,14 @@ Docusaurus 将为每个语言版本构建一个单页面应用程序：
 
 - website/build：默认使用的英文语言
 - website/build/zh-cn：简体中文语言
+
+### 踩坑记录
+
+如果遇到类似下面的报错, 运行 `npm run write-translations -- --locale zh-CN`, 修改 `i18n/zh-CN` 中的文案, 删除前面这段 `One min read|`
+
+```bash
+For locale=zh-CN, a maximum of 1 plural forms are expected (other), but the message contains 2: One min read|1 min read
+```
 
 详细说明: https://docusaurus.io/zh-CN/docs/i18n/tutorial#single-domain-deployment
 
