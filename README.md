@@ -105,11 +105,30 @@ npm run start -- --locale zh-CN
 
 ##### 翻译文档
 
-将您的文档 Markdown 文件从 复制docs/到i18n/fr/docusaurus-plugin-content-docs/current，并翻译它们：
+将文档 Markdown 文件从 docs/ 复制到 i18n/zh-CN/docusaurus-plugin-content-docs/current，并翻译它们：
+
+```bash
+mkdir -p i18n/zh-CN/docusaurus-plugin-content-docs/current
+cp -r docs/** i18n/zh-CN/docusaurus-plugin-content-docs/current
+```
+
+##### 翻译博客
+
+将文档 Markdown 文件从 docs/ 复制到 i18n/zh-CN/docusaurus-plugin-content-blog，并翻译它们：
 
 ```bash
 mkdir -p i18n/zh-CN/docusaurus-plugin-content-blog
 cp -r blog/** i18n/zh-CN/docusaurus-plugin-content-blog
+```
+
+##### 翻译页面
+
+将文档页面文件从 docs/ 复制到 i18n/zh-CN/docusaurus-plugin-content-pages，并翻译它们：
+
+```bash
+mkdir -p i18n/zh-CN/docusaurus-plugin-content-pages
+cp -r src/pages/**.md i18n/zh-CN/docusaurus-plugin-content-pages
+cp -r src/pages/**.mdx i18n/zh-CN/docusaurus-plugin-content-pages
 ```
 
 ### 构建站点
