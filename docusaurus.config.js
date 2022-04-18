@@ -85,7 +85,14 @@ const config = {
             sidebarId: 'docSidebar',
             label: 'DocSidebar',
           },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'note',
+            label: 'Note',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/zain', label: 'Zain', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'right',
