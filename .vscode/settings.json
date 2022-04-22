@@ -5,6 +5,7 @@
         "hideable",
         "mkdir",
         "typecheck",
-        "Zaindoc"
+        "Zaindoc",
+        "zainjane"
     ]
 }
