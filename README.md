@@ -156,6 +156,22 @@ For locale=zh-CN, a maximum of 1 plural forms are expected (other), but the mess
 
 详细说明: https://docusaurus.io/zh-CN/docs/i18n/tutorial#single-domain-deployment
 
+## 页面部署
+
+### 国外
+
+直接用 `github` 部署页面
+
+页面地址: [https://zainchen.github.io/zaindoc](https://zainchen.github.io/zaindoc)
+项目地址: [https://github.com/ZainChen/zaindoc](https://github.com/ZainChen/zaindoc)
+
+### 国内
+
+使用 `gitee` 部署页面
+
+页面地址: [https://zainczy.gitee.io/zaindoc](https://zainczy.gitee.io/zaindoc)
+项目地址: [https://gitee.com/zainczy/zaindoc](https://gitee.com/zainczy/zaindoc)
+
 ## 参考资料
 
 - 官方文档(多语言): https://docusaurus.io
