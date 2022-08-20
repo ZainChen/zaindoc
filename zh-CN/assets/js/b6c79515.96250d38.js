@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkzaindoc=self.webpackChunkzaindoc||[]).push([[2201],{4998:a=>{a.exports=JSON.parse('{"label":"hello","permalink":"/zaindoc/zh-CN/blog/tags/hello","allTagsPath":"/zaindoc/zh-CN/blog/tags","count":2}')}}]);

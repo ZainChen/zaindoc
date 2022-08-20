@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzaindoc=self.webpackChunkzaindoc||[]).push([[9014],{8326:function(a){a.exports=JSON.parse('{"label":"hola","permalink":"/zaindoc/zh-CN/blog/tags/hola","allTagsPath":"/zaindoc/zh-CN/blog/tags","count":1}')}}]);
