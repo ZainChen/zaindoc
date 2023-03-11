@@ -4,16 +4,24 @@
     "description": "The title in the navbar"
   },
   "item.label.Doc": {
-    "message": "Doc",
+    "message": "文档",
     "description": "Navbar item with label Doc"
   },
   "item.label.DocSidebar": {
     "message": "DocSidebar",
     "description": "Navbar item with label DocSidebar"
   },
+  "item.label.Note": {
+    "message": "笔记",
+    "description": "Navbar item with label Note"
+  },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "博客",
     "description": "Navbar item with label Blog"
+  },
+  "item.label.Zain": {
+    "message": "Zain",
+    "description": "Navbar item with label Zain"
   },
   "item.label.GitHub": {
     "message": "GitHub",

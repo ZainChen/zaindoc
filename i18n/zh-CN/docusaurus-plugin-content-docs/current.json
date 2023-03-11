@@ -10,5 +10,13 @@
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Tutorial - Extras",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.note.category.Git 相关笔记": {
+    "message": "Git 相关笔记",
+    "description": "The label for category Git 相关笔记 in sidebar note"
+  },
+  "sidebar.note.category.Zaindoc": {
+    "message": "Zaindoc",
+    "description": "The label for category Zaindoc in sidebar note"
   }
 }

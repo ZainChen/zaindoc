@@ -10,7 +10,6 @@
     // 需要在 docusaurus.config.js 中添加 Webpack 别名配置 resolve.alias
     "src/*": [
       "./src/*"
-    ],
-    "@site/*": ["./*"]
+    ]
   }
 }
