@@ -16,7 +16,7 @@
 npm r -S example-package
 ```
 
-`nvm` 安装新版本 `node`，并将指定版本 `node` 的全局依赖包全部迁移
+### nvm 安装新版本 node，并将指定版本 node 的全局依赖包全部迁移
 
 ```bash
 # 使用 nvm 安装 Node.js 版本 v18.15.0
@@ -24,7 +24,7 @@ npm r -S example-package
 nvm install v18.15.0 --reinstall-packages-from=v18.14.2
 ```
 
-查看所有全局依赖包
+### 查看所有全局依赖包
 
 ```bash
 # npm ls: 列出当前安装的包及其依赖。
