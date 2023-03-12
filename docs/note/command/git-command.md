@@ -21,7 +21,7 @@ git checkout dev
 # 将旧的分支 dev 重置成 master
 git reset --hard master
 
-# 再推强制送到远程仓库
+# 再推强制送到远程仓库(需要远程仓库开启强制推送权限)
 git push origin dev --force
 ```
 
