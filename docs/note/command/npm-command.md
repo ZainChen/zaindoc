@@ -23,3 +23,12 @@ npm r -S example-package
 # 重新安装所有包，并使用之前已经安装的版本 v18.14.2 的依赖关系
 nvm install v18.15.0 --reinstall-packages-from=v18.14.2
 ```
+
+查看所有全局依赖包
+
+```bash
+# npm ls: 列出当前安装的包及其依赖。
+# --global: 查看全局安装的包。
+# --depth 0: 只显示第一层级别的包，因为传递给此命令的深度参数为0
+npm ls --global --depth 0
+```
