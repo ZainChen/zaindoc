@@ -1,3 +1,3 @@
-# 命令
+# Command
 
-各种命令
+Various commands

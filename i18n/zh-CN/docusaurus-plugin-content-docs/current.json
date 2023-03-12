@@ -11,16 +11,16 @@
     "message": "Tutorial - Extras",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
   },
-  "sidebar.note.category.其它": {
+  "sidebar.note.category.Command": {
+    "message": "命令",
+    "description": "The label for category Command in sidebar note"
+  },
+  "sidebar.note.category.Other": {
     "message": "其它",
-    "description": "The label for category 其它 in sidebar note"
+    "description": "The label for category Other in sidebar note"
   },
   "sidebar.note.category.Zaindoc": {
     "message": "Zaindoc",
     "description": "The label for category Zaindoc in sidebar note"
-  },
-  "sidebar.note.category.命令": {
-    "message": "命令",
-    "description": "The label for category 命令 in sidebar note"
   }
 }

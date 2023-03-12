@@ -1,3 +1,3 @@
-# 其它
+# Other
 
-暂未分类的笔记
+Uncategorized notes

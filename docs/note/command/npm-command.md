@@ -15,3 +15,11 @@
 # example-package: 要移除的包的名称（随便取一个不存在的包）
 npm r -S example-package
 ```
+
+`nvm` 安装新版本 `node`，并将指定版本 `node` 的全局依赖包全部迁移
+
+```bash
+# 使用 nvm 安装 Node.js 版本 v18.15.0
+# 重新安装所有包，并使用之前已经安装的版本 v18.14.2 的依赖关系
+nvm install v18.15.0 --reinstall-packages-from=v18.14.2
+```
