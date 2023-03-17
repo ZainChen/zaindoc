@@ -2,7 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 const path = require('path');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -81,22 +81,16 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'doc/intro',
-            position: 'left',
-            label: 'Doc',
-          },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'docSidebar',
-            label: 'DocSidebar',
-          },
-          {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'note',
             label: 'Note',
+          },
+          {
+            type: 'doc',
+            docId: 'doc/intro',
+            position: 'left',
+            label: 'Doc',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/zain', label: 'Zain', position: 'left'},

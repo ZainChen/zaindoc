@@ -45,7 +45,7 @@ npm install --save @easyops-cn/docusaurus-search-local
 
 配置 docusaurus.config.js
 
-```ts
+```ts showLineNumbers
 // In your `docusaurus.config.js`:
 module.exports = {
   // ... Your other configurations.
@@ -73,7 +73,7 @@ module.exports = {
 
 ### 配置 docusaurus.config.js
 
-```ts
+```ts showLineNumbers
 module.exports = {
   i18n: {
     defaultLocale: 'en',
