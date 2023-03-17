@@ -32,3 +32,11 @@ nvm install v18.15.0 --reinstall-packages-from=v18.14.2
 # --depth 0: 只显示第一层级别的包，因为传递给此命令的深度参数为0
 npm ls --global --depth 0
 ```
+
+### 从源码安装 nrm
+
+如果直接用 `npm i nrm -g` 安装，会识别不了当前正在使用的源
+
+```bash
+npm i Pana/nrm -g
+```
