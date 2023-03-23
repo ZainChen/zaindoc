@@ -1,49 +1,47 @@
-# 开发指南
+# Developer guide
 
-Developer guide
-
-## 开发/构建/部署
+## Development/Build/Deployment
 
 ```bash
-# 安装依赖
+# Install dependencies
 npm i
 
-# 开发
+# Development
 npm run start
 
-# 构建
+# Build
 npm run build
 
-# 部署
-# 设置好 github ssh, 可直接用这条命令, 自动构建并 push 到 github 的 gh-pages 分支中触发页面更新
+# Deployment
+# If GitHub ssh is set up, you can use this command to automatically build and push it to the gh-pages branch of GitHub to trigger page updates
 USE_SSH=true npm run deploy
 ```
 
-### 自动部署配置
+### Automated Deployment Configuration
 
-项目 main 分支的根目录, 添加下列两个文件:
+Add the following two files in the root directory of the project's main branch:
 
 ```bash
-# main 分支 push 到 github, 自动触发构建的配置
+# Configuration for triggering build automatically when main branch is pushed to GitHub
 .github/workflows/deploy.yml
 
-# pull 拉取 main 分支, 自动触发构建的配置
+# Configuration for triggering build automatically when main branch is pulled
 .github/workflows/test-deploy.yml
 ```
 
-详细说明: https://docusaurus.io/zh-CN/docs/deployment#triggering-deployment-with-github-actions
+Detailed Description: https://docusaurus.io/docs/deployment#triggering-deployment-with-github-actions
 
-## 搜索
+## Search
 
-### 本地搜索
+### Local Search
 
-安装依赖包
+Install dependencies package
 
 ```bash
 npm install --save @easyops-cn/docusaurus-search-local
 ```
 
-配置 docusaurus.config.js
+Configure docusaurus.config.js
 
 ```ts showLineNumbers
 // In your `docusaurus.config.js`:
@@ -67,11 +65,11 @@ module.exports = {
 };
 ```
 
-详细配置说明: https://github.com/easyops-cn/docusaurus-search-local
+Detailed Configuration Instructions: https://github.com/easyops-cn/docusaurus-search-local
 
-## 国际化
+## Internationalization
 
-### 配置 docusaurus.config.js
+### Configure docusaurus.config.js
 
 ```ts showLineNumbers
 module.exports = {
@@ -82,7 +80,7 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      // 配置语言切换组件
+      // Configure language switching component
       items: [
         {
           type: 'localeDropdown',
@@ -94,38 +92,38 @@ module.exports = {
 };
 ```
 
-### 开发调试指定语言站点:
+### Develop and Debug Specified Language Site:
 
 ```bash
-# 调试中文站点
+# Debug the Chinese site
 npm run start -- --locale zh-CN
 ```
 
-### 翻译
+### Translation
 
-#### 翻译 Markdown 文件:
+#### Translate Markdown Files:
 
-##### 翻译文档
+##### Translate Documents
 
-将文档 Markdown 文件从 docs/ 复制到 i18n/zh-CN/docusaurus-plugin-content-docs/current，并翻译它们：
+Copy the Markdown files from docs/ to i18n/zh-CN/docusaurus-plugin-content-docs/current and translate them as follows:
 
 ```bash
 mkdir -p i18n/zh-CN/docusaurus-plugin-content-docs/current
 cp -r docs/** i18n/zh-CN/docusaurus-plugin-content-docs/current
 ```
 
-##### 翻译博客
+##### Translate Blogs
 
-将文档 Markdown 文件从 docs/ 复制到 i18n/zh-CN/docusaurus-plugin-content-blog，并翻译它们：
+Copy the Markdown files from docs/ to i18n/zh-CN/docusaurus-plugin-content-blog and translate them as follows:
 
 ```bash
 mkdir -p i18n/zh-CN/docusaurus-plugin-content-blog
 cp -r blog/** i18n/zh-CN/docusaurus-plugin-content-blog
 ```
 
-##### 翻译页面
+##### Translate Pages
 
-将文档页面文件从 docs/ 复制到 i18n/zh-CN/docusaurus-plugin-content-pages，并翻译它们：
+Copy the document page files from docs/ to i18n/zh-CN/docusaurus-plugin-content-pages and translate them as follows:
 
 ```bash
 mkdir -p i18n/zh-CN/docusaurus-plugin-content-pages
@@ -133,58 +131,58 @@ cp -r src/pages/**.md i18n/zh-CN/docusaurus-plugin-content-pages
 cp -r src/pages/**.mdx i18n/zh-CN/docusaurus-plugin-content-pages
 ```
 
-##### 翻译内置组件文案
+##### Translate Built-in Component Copy
 
-下列命令会自动翻译内置组件文案到 `i18n/zh-CN` 目录中
+The following command automatically translates the built-in component copy to the `i18n/zh-CN` directory:
 
 ```bash
 npm run write-translations -- --locale zh-CN
 ```
 
-### 构建站点
+### Build Site
 
-#### 单域名部署
+#### Single-Domain Deployment
 
-构建站点还是用的加入国际化之前一样的命令
+The site is built using the same command as before internationalization was added.
 
 ```bash
 npm run build
 ```
 
-Docusaurus 将为每个语言版本构建一个单页面应用程序：
+Docusaurus will build a single-page application for each language version:
 
-- website/build：默认使用的英文语言
-- website/build/zh-cn：简体中文语言
+- website/build: Default language is English
+- website/build/zh-cn: Simplified Chinese language
 
-### 踩坑记录
+### Pitfalls
 
-如果遇到类似下面的报错, 运行 `npm run write-translations -- --locale zh-CN`, 修改 `i18n/zh-CN` 中的文案, 删除前面这段 `One min read|`
+If you encounter an error similar to the following, run `npm run write-translations -- --locale zh-CN`, modify the copy in `i18n/zh-CN`, and delete the `One min read|` prefix:
 
 ```bash
 For locale=zh-CN, a maximum of 1 plural forms are expected (other), but the message contains 2: One min read|1 min read
 ```
 
-详细说明: https://docusaurus.io/zh-CN/docs/i18n/tutorial#single-domain-deployment
+Detailed Instructions: https://docusaurus.io/docs/i18n/tutorial#single-domain-deployment
 
-## 页面部署
+## Page Deployment
 
-### 国外
+### Overseas
 
-直接用 `github` 部署页面
+Directly use `GitHub` to deploy the page
 
-页面地址: [https://zainchen.github.io/zaindoc](https://zainchen.github.io/zaindoc)
-项目地址: [https://github.com/ZainChen/zaindoc](https://github.com/ZainChen/zaindoc)
+Page URL: [https://zainchen.github.io/zaindoc](https://zainchen.github.io/zaindoc)
+Project URL: [https://github.com/ZainChen/zaindoc](https://github.com/ZainChen/zaindoc)
 
-### 国内
+### Domestic
 
-使用 `gitee` 部署页面
+Use `Gitee` to deploy the page
 
-页面地址: [https://zainczy.gitee.io/zaindoc](https://zainczy.gitee.io/zaindoc)
-项目地址: [https://gitee.com/zainczy/zaindoc](https://gitee.com/zainczy/zaindoc)
+Page URL: [https://zainczy.gitee.io/zaindoc](https://zainczy.gitee.io/zaindoc)
+Project URL: [https://gitee.com/zainczy/zaindoc](https://gitee.com/zainczy/zaindoc)
 
-## 参考资料
+## References
 
-- 官方文档(多语言): https://docusaurus.io
-- 触发 GitHub Actions 自动部署: https://docusaurus.io/zh-CN/docs/deployment#triggering-deployment-with-github-actions
-- 本地搜索: https://github.com/easyops-cn/docusaurus-search-local
-- 国际化: https://docusaurus.io/zh-CN/docs/i18n/tutorial#single-domain-deployment
+- Official Documentation (Multilingual): https://docusaurus.io
+- Triggering GitHub Actions Automatic Deployment: https://docusaurus.io/docs/deployment#triggering-deployment-with-github-actions
+- Local Search: https://github.com/easyops-cn/docusaurus-search-local
+- Internationalization: https://docusaurus.io/docs/i18n/tutorial#single-domain-deployment

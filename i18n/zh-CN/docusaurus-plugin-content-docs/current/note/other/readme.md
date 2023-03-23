@@ -1,3 +1,3 @@
-# Other
+# 其它
 
-Uncategorized notes
+未分类笔记

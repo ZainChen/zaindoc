@@ -1,36 +1,36 @@
-# git 命令
+# Git commands
 
 ---
 
-### 删除 Git 过滤的文件和文件夹
+### Delete Files and Directories Filtered by Git
 
 ```bash
-# 使用 Git 清除所有未被跟踪的文件和目录
-# -f：强制删除（无需确认）
-# -x：包括忽略清单中列出的文件和目录
-# -d: 包含未被版本控制系统跟踪的目录（注意：此选项会删除包括空目录）
+# Use Git to clear all untracked files and directories
+# -f: Force deletion (no confirmation required)
+# -x: Includes files and directories listed in the ignore checklist
+# -d: Includes directories not tracked by the version control system (note: this option will delete even empty directories)
 git clean -fxd
 ```
 
-### 重置分支
+### Reset Branch
 
 ```bash
-# 切换到旧的分支 dev
+# Switch to the old branch "dev"
 git checkout dev
 
-# 将旧的分支 dev 重置成 master
+# Reset the old branch "dev" to "master"
 git reset --hard master
 
-# 再推强制送到远程仓库(需要远程仓库开启强制推送权限)
+# Then, push the force to the remote repository (requires force push permission)
 git push origin dev --force
 ```
 
-### 删除 tag
+### Delete Tag
 
 ```bash
-# 删除本地 tag
+# Delete local tag
 git tag --delete TagName
 
-# 同步到远程仓库
+# Synchronize to the remote repository
 git push origin :TagName
 ```

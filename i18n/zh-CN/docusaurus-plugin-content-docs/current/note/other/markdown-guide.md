@@ -99,17 +99,17 @@
 
 示例：
 
-![志银](https://raw.githubusercontent.com/ZainChen/zain/main/image/zain-180.png "志银")
+![志银](https://zainchen.github.io/zaindoc/zh-CN/img/logo.jpeg "志银")
 
 ### 方法2
 
 > 直接用 `html` 标签，可修改图片大小
 
 ```html
-<img src="https://raw.githubusercontent.com/ZainChen/zain/main/image/zain-180.png" style="width:100px;height:100px;" alt="志银" />
+<img src="https://zainchen.github.io/zaindoc/zh-CN/img/logo.jpeg" style="width:100px;height:100px;" alt="志银" />
 ```
 
-<img src="https://raw.githubusercontent.com/ZainChen/zain/main/image/zain-180.png" style={{width:'50px', height: '50px'}} alt="志银" />
+<img src="https://zainchen.github.io/zaindoc/zh-CN/img/logo.jpeg" style={{width:'50px', height: '50px'}} alt="志银" />
 
 ---
 

@@ -1,75 +1,75 @@
-# Markdown 使用说明
+# Markdown User Guide
 
 ---
 
-## 标题
+## Title
 
-> 标准语法一般在 `#` 后跟个空格再写文字
+> Standard syntax typically involves writing text after a `#` followed by a space
 
 ```markdown
-# 这是一级标题
-## 这是二级标题
-### 这是三级标题
-#### 这是四级标题
-##### 这是五级标题
-###### 这是六级标题
+# This is a level-one heading
+## This is a level-two heading
+### This is a level-three heading
+#### This is a level-four heading
+##### This is a level-five heading
+###### This is a level-six heading
 ```
 
-示例：
+Example:
 
-# 这是一级标题
-## 这是二级标题
-### 这是三级标题
-#### 这是四级标题
-##### 这是五级标题
-###### 这是六级标题
+# This is a level-one heading
+## This is a level-two heading
+### This is a level-three heading
+#### This is a level-four heading
+##### This is a level-five heading
+###### This is a level-six heading
 
 ---
 
-## 字体
+## Font
 
 ```markdown
-**这是加粗的文字**
-*这是倾斜的文字*`
-***这是斜体加粗的文字***
-~~这是加删除线的文字~~
+**This is bold text**
+*This is italicized text*
+***This is bold and italicized text***
+~~This is strikethrough text~~
 ```
 
-示例：
+Example:
 
-**这是加粗的文字**
+**This is bold text**
 
-*这是倾斜的文字*
+*This is italicized text*
 
-***这是斜体加粗的文字***
+***This is bold and italicized text***
 
-~~这是加删除线的文字~~
+~~This is strikethrough text~~
 
 ---
 
-## 引用
+## Quote
 
-> 引用文字前加 `>` 即可，引用可嵌套，如加两个 `>>` 三个 `>>>` n 个...
+> Simply add the symbol `>` before the text you want to quote. The quotation can be nested, such as adding two `>>`, three `>>>`, n number of...
 
 ```markdown
->这是引用的内容
->>这是引用的内容
+>This is the quotation
+>>This is the quoted content
 >>
->>>>>>>>>>这是引用的内容
+>>>>>>>>>>This is the citation
 ```
 
-示例：
+Example:
 
->这是引用的内容
->>这是引用的内容
+>This is the quotation
+>>This is the quoted content
 >>
->>>>>>>>>>这是引用的内容
+>>>>>>>>>>This is the citation
 
 ---
 
-## 分割线
+## Divider
 
-> 三个或者三个以上 `-` 或者 `*` 都 ok
+> Three or more `-` or `*` will do
 
 ```markdown
 ----
@@ -77,200 +77,200 @@
 *****
 ```
 
-示例：
+Example:
 
 ----
 ***
 *****
 
-## 图片
+## Image
 
-### 方法1
+### Method 1
 
-> 无法修改图片大小
+> Can't change image size
 
-图片alt：显示在图片下面的文字，对图片内容的解释(可加可不加，Typora无效)
+Image alt: the text displayed below the image, an explanation of the image content (can be added or not, Typora is not valid)
 
-图片title：图片的标题，当鼠标移到图片上时显示的内容(可加可不加，Typora无效)
+Image title: the title of the image, the content displayed when the mouse moves over the image (can be added or not, Typora is not valid)
 
 ```markdown
-![图片alt](图片地址 "图片title")
+![image alt](image address "image title")
 ```
 
-示例：
+Example:
 
-![志银](https://raw.githubusercontent.com/ZainChen/zain/main/image/zain-180.png "志银")
+![zain](https://zainchen.github.io/zaindoc/zh-CN/img/logo.jpeg "zain")
 
-### 方法2
+### Method 2
 
-> 直接用 `html` 标签，可修改图片大小
+> Directly using the `html` tag, you can modify the image size
 
 ```html
-<img src="https://raw.githubusercontent.com/ZainChen/zain/main/image/zain-180.png" style="width:100px;height:100px;" alt="志银" />
+<img src="https://zainchen.github.io/zaindoc/zh-CN/img/logo.jpeg" style="width:100px;height:100px;" alt="志银" />
 ```
 
-<img src="https://raw.githubusercontent.com/ZainChen/zain/main/image/zain-180.png" style={{width:'50px', height: '50px'}} alt="志银" />
+<img src="https://zainchen.github.io/zaindoc/zh-CN/img/logo.jpeg" style={{width:'50px', height: '50px'}} alt="志银" />
 
 ---
 
-## 超链接
+## Hyperlink
 
-### 方法1
+### Method 1
 
-> `title` 可加可不加
+> `title` can be added or not
 
 ```markdown
-[超链接名](超链接地址 "超链接title")
+[Hyperlink name](Hyperlink address "Hyperlink title")
 ```
 
-示例：
+Example:
 
-[简书](http://jianshu.com)
-[百度](http://baidu.com)
+[Google](https://www.google.com)
+[Bing](https://www.bing.com)
 
-### 方法2
+### Method 2
 
 ```html
-<a href="超链接地址" target="_blank">超链接名</a>
+<a href="Hyperlink address" target="_blank">Hyperlink title</a>
 ```
 
-示例：
-<a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
+Example:
+<a href="https://www.google.com" target="_blank">Google</a>
 
 ---
 
-## 列表
+## List
 
-### 无序列表
+### Unordered list
 
-> `-` `+` `*` 任何一种都可以(`-` `+` `*` 与内容之间要加一个空格)
-
-```markdown
-- 列表内容
-+ 列表内容
-* 列表内容
-```
-
-示例：
-
-- 列表内容
-+ 列表内容
-* 列表内容
-
-### 有序列表
-
-> 序号与内容之间要加一个空格
+> `-` `+` `*` Either one is fine (a space between `-` `+` `*` and the content)
 
 ```markdown
-1. 列表内容
-2. 列表内容
-3. 列表内容
+- List content
++ list content
+* list content
 ```
 
-示例：
+Example:
 
-1. 列表内容
-2. 列表内容
-3. 列表内容
+- List content
++ list content
+* List Contents
 
-### 列表嵌套
+### Ordered list
 
-> 上一级和下一级之间敲两个空格即可
+> Add a space between the number and the content
 
 ```markdown
-- 列表内容
-  - 列表内容
-    - 列表内容
-    - 列表内容
-  - 列表内容
-  + 列表内容
-* 列表内容
+1. list content
+2. list content
+3. list content
 ```
 
-示例：
+Example:
 
-- 列表内容
-  - 列表内容
-    - 列表内容
-    - 列表内容
-  - 列表内容
-  + 列表内容
-* 列表内容
+1. list content
+2. list content
+3. list content
+
+### List nesting
+
+> Just knock two spaces between the previous and next level
+
+```markdown
+- List Contents
+  - List Contents
+    - List Contents
+    - List Contents
+  - List Contents
+  + List Contents
+* List Contents
+```
+
+Example:
+
+- List Contents
+  - List Contents
+    - List Contents
+    - List Contents
+  - List Contents
+  + List Contents
+* List Contents
 
 ---
 
-## 表格
+## Table
 
-注：
+Note:
 
-第二行分割表头和内容(`-`有一个就行，为了对齐，多加了几个)
+The second line separates the header and content (only need one `-` for alignment, but extra ones are added for clarity).
 
-文字默认居左
+Text aligns to the left by default.
 
-表头分割符`-`两边加：文字居中
+Header separator `-` with `:` on both sides aligns header text to the center.
 
-表头分割符`-`右边加：文字居右
+Header separator `-` with `:` on the right aligns header text to the right.
 
-表头分割符`-`左边加：文字居左
+Header separator `-` with `:` on the left aligns header text to the left.
 
-(PS：原生的语法两边都要用 `| `包起来，此处省略)
+(Note: In the original syntax, both sides of the table to be enclosed in `| `, but it is omitted here.)
 
 ```markdown
-表头|表头|表头
+Header|Header|Header
 ---|:--:|--:
-内容|内容|内容
-内容|内容|内容
+Content|Content|Content
+Content|Content|Content
 ```
 
-示例：
+Example:
 
-表头|表头|表头
+Header|Header|Header
 ---|:--:|--:
-内容|内容|内容
-内容|内容|内容
+Content|Content|Content
+Content|Content|Content
 
 ---
 
-## 代码
+## Code
 
-### 单行代码
+### Inline Code
 
-> 代码之间分别用一个反引号包起来
+> Use one backtick to surround the code
 
 ```markdown
-`代码内容`
+`Code Content`
 ```
 
-示例：
+Example:
 
-`代码内容`
+`Code Content`
 
-### 代码块
+### Code Blocks
 
-> 代码之间分别用三个反引号包起来，且两边的反引号单独占一行
+> Code blocks are enclosed in three backticks on each side, and the backticks occupy a separate line.
 
 ```markdown
-// `\` 是为防止语法生效的占位符
+// Use `\` as a placeholder to prevent syntax from taking effect.
 \```cpp
-代码块...
-代码块...
-代码块...
+Code block...
+Code block...
+Code block...
 \```
 ```
 
-示例：
+Example:
 
 ```cpp
 /*
-二进制字符串转十进制
-头文件:
+Binary string to decimal
+Header:
 	#include<iostream>
 	using namespace std;
-参数:
-	string s: 待转化二进制字符串
-返回值:
-	long long : 转换后的十进制数
-例子:
+Parameter:
+	string s: binary string to be converted
+Return:
+	long long : decimal number after conversion
+Example:
 	cout << BinaryToInt("000010101"); //21
 */
 long long BinaryToInt(string s) {

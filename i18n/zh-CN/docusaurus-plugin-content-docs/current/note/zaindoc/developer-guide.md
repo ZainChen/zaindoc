@@ -1,7 +1,5 @@
 # 开发指南
 
-Developer guide
-
 ## 开发/构建/部署
 
 ```bash

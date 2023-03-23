@@ -1,41 +1,41 @@
-# npm 命令
+# Npm command
 
 ---
 
-### 排序 dependencies 和 devDependencies 中的依赖包
+### Sort dependencies and devDependencies in order
 
-在不安装依赖包的情况下，对 `dependencies` 和 `devDependencies` 中的依赖包进行排序
+Sort the dependencies in `dependencies` and `devDependencies` without installing packages.
 
-从依赖项中删除或卸载不存在的包即可
+Simply remove or uninstall the missing packages from the dependency list.
 
 ```bash
-# npm: 这是 Node.js 包管理器（Node Package Manager）的命令
-# r: 缩写 remove，表示要移除某个包
-# -S: 缩写 --save，表示要将依赖项写入项目的 package.json 文件
-# example-package: 要移除的包的名称（随便取一个不存在的包）
+# npm: Node Package Manager
+# r: abbreviation for remove, meaning to remove a package
+# -S: abbreviation for --save, meaning to save the dependency in the project's package.json file
+# example-package: the name of the package to be removed (any non-existent package name can be used)
 npm r -S example-package
 ```
 
-### nvm 安装新版本 node，并将指定版本 node 的全局依赖包全部迁移
+### nvm install new version of Node and migrate all global dependencies of a specified Node version
 
 ```bash
-# 使用 nvm 安装 Node.js 版本 v18.15.0
-# 重新安装所有包，并使用之前已经安装的版本 v18.14.2 的依赖关系
+# Install Node.js version v18.15.0 using nvm
+# Reinstall all packages and use the dependency relationships of previously installed version v18.14.2
 nvm install v18.15.0 --reinstall-packages-from=v18.14.2
 ```
 
-### 查看所有全局依赖包
+### Display all global dependencies
 
 ```bash
-# npm ls: 列出当前安装的包及其依赖。
-# --global: 查看全局安装的包。
-# --depth 0: 只显示第一层级别的包，因为传递给此命令的深度参数为0
+# npm ls: list all installed packages and their dependencies
+# --global: view globally installed packages
+# --depth 0: only display the first level packages as the depth parameter passed to this command is 0
 npm ls --global --depth 0
 ```
 
-### 从源码安装 nrm
+#### Install nrm from source code
 
-如果直接用 `npm i nrm -g` 安装，会识别不了当前正在使用的源
+When installing `nrm` directly with `npm i nrm -g`, the current source used will not be recognized.
 
 ```bash
 npm i Pana/nrm -g
