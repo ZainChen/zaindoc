@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { jsonp } from 'src/utils/jsonp'
 
+import styles from './styles.module.css'
+
+const SvgViewsArticle = require('@site/static/img/views_article.svg').default
+const SvgViewsUser = require('@site/static/img/views_user.svg').default
+const SvgViewsSite = require('@site/static/img/views_site.svg').default
+
 interface BusuanziData {
   page_pv: number
   site_pv: number
@@ -29,12 +35,22 @@ export default function WebsiteCount(): JSX.Element {
   }, [])
 
   return (
-    <div>
-      <span id="busuanzi_container_site_pv">本站总访问量{sitePV}次（所有页面的总访问次数）</span>
-      <br />
-      <span id="busuanzi_container_site_uv">本站访客数{siteUV}人次</span>
-      <br />
-      <span id="busuanzi_container_page_pv">本文总阅读量{pagePV}次</span>
+    <div className={styles.websiteCount}>
+      {/* 所有页面的总访问次数 */}
+      <div className={styles.svgSiteCount}>
+        <SvgViewsSite />
+        <span>{sitePV}</span>
+      </div>
+      {/* 当前文章访问数量 */}
+      <div className={styles.svgSiteCount}>
+        <SvgViewsArticle />
+        <span>{pagePV}</span>
+      </div>
+      {/* 站点访客人数 */}
+      <div className={styles.svgSiteCount}>
+        <SvgViewsUser />
+        <span>{siteUV}</span>
+      </div>
     </div>
   )
 }
