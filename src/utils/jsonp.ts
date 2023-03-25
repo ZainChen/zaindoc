@@ -15,10 +15,6 @@ class Jsonp {
     this.options = {}
     this.timer = null
     this.scriptElement = null
-
-    if (!window || !document) {
-      throw new Error('No window or document object.')
-    }
   }
 
   private options: JsonpOptions
