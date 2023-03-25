@@ -2,7 +2,9 @@
   // This file is not used in compilation. It is here just for a nice editor experience.
   "extends": "@tsconfig/docusaurus/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    // 启用所有严格类型检查选项
+    "strict": true,
   },
   // 指定模块的路径，和 baseUrl 有关联，和 webpack 中 resolve.alias 配置一样（webpack 中已配置）
   "paths": {

@@ -1,9 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
-const path = require('path');
+const lightCodeTheme = require('prism-react-renderer/themes/github')
+const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext')
+const path = require('path')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -54,14 +54,14 @@ const config = {
   themes: [
     // ... Your other themes.
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
-        language: ["en", "zh"],
+        language: ['en', 'zh'],
         // ```
       },
     ],
@@ -96,8 +96,8 @@ const config = {
             position: 'left',
             label: 'Doc',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/zain', label: 'Zain', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/zain', label: 'Zain', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -159,30 +159,34 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    plugins: [
-      // async function pluginAlias(context, options) {
-      //   return {
-      //     name: 'zain-alias-plugin',
-      //     configureWebpack() {
-      //         return {
-      //             resolve: {
-      //                 alias: {
-      //                   // 模块导入别名，指定后可以在文件之直接 import * from 'src/*';
-      //                   // 在 tsconfig.json 中添加 "paths": {"src/*": ["./src/*"]}
-      //                   src: path.resolve(__dirname, './src/'),
-      //                 },
-      //             },
-      //         };
-      //     },
-      //   };
-      // },
-      // 插件可以直接像上面一样直接写在当前文件, 也可以独立文件编写
-      ['./plugin/alias.js', {
+
+  plugins: [
+    // async function pluginAlias(context, options) {
+    //   return {
+    //     name: 'zain-alias-plugin',
+    //     configureWebpack() {
+    //         return {
+    //             resolve: {
+    //                 alias: {
+    //                   // 模块导入别名，指定后可以在文件之直接 import * from 'src/*';
+    //                   // 在 tsconfig.json 中添加 "paths": {"src/*": ["./src/*"]}
+    //                   src: path.resolve(__dirname, './src/'),
+    //                 },
+    //             },
+    //         };
+    //     },
+    //   };
+    // },
+    // 插件可以直接像上面一样直接写在当前文件, 也可以独立文件编写
+    [
+      './plugin/alias.js',
+      {
         alias: {
           src: path.resolve(__dirname, './src/'),
-        }
-      }],
-    ]
-};
+        },
+      },
+    ],
+  ],
+}
 
-module.exports = config;
+module.exports = config
