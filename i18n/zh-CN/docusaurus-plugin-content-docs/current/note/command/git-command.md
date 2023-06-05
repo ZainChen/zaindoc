@@ -34,3 +34,13 @@ git tag --delete TagName
 # 同步到远程仓库
 git push origin :TagName
 ```
+
+### 同步本地的远程分支
+
+```bash
+# 查看本地分支和追踪情况
+git remote show origin
+
+# 删本地多余的远程分支
+git remote prune origin
+```

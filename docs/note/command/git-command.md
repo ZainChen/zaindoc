@@ -34,3 +34,13 @@ git tag --delete TagName
 # Synchronize to the remote repository
 git push origin :TagName
 ```
+
+### Synchronize local remote branches
+
+```bash
+# View local branches and tracking
+git remote show origin
+
+# Delete local redundant remote branches
+git remote prune origin
+```

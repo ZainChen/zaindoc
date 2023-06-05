@@ -3,7 +3,6 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
-const path = require('path')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -178,14 +177,7 @@ const config = {
     //   };
     // },
     // 插件可以直接像上面一样直接写在当前文件, 也可以独立文件编写
-    [
-      './plugin/alias.js',
-      {
-        alias: {
-          src: path.resolve(__dirname, './src/'),
-        },
-      },
-    ],
+    ['./plugin/alias.js', {}],
   ],
 }
 
